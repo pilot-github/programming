@@ -1,3 +1,15 @@
+##########################################################################################
+## Given binary tree [3,9,20,null,null,15,7],
+## return its depth = 3.
+##          3
+##         / \
+##        9  20
+##          /  \
+##         15   7
+##
+## link = "https://leetcode.com/problems/maximum-depth-of-binary-tree/"
+##########################################################################################
+
 def maxDepth1(self, root: TreeNode) -> int:
     depth = 0
     left_depth = 0
@@ -17,3 +29,6 @@ def maxDepth1(self, root: TreeNode) -> int:
     
 def maxDepth2(self, root):
     return 1 + max(self.maxDepth(root.left), self.maxDepth(root.right)) if root else 0
+
+
+
