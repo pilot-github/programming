@@ -13,11 +13,11 @@
 ## It doesn't matter what you leave beyond the returned length.
 ##
 ######################################################################
-def removeDuplicates1(self, nums: List[int]) -> int:
+def removeDuplicates(self, nums: List[int]) -> int:
         nums[:] = sorted(set(nums))
         return len(nums)
 
-def removeDuplicates2(nums):
+def my_removeDuplicates(nums):
     index = 1
     while index < len(nums):
         print(index, nums[index], nums[index-1])
@@ -29,4 +29,4 @@ def removeDuplicates2(nums):
     return len(nums)
 
 nums = [0,0,1,1,1,2,2,3,3,4]
-print(removeDuplicates1(nums))
+print(removeDuplicates(nums))
