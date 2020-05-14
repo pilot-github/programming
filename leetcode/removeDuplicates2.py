@@ -6,7 +6,7 @@
 ## It doesn't matter what you leave beyond the returned length.
 #########################################################################
 
-def removeDuplicates1(self, nums: List[int]) -> int:
+def my_removeDuplicates(self, nums: List[int]) -> int:
     i=2
     while i < len(nums):
         if len(nums) <3:
@@ -17,7 +17,7 @@ def removeDuplicates1(self, nums: List[int]) -> int:
         i += 1
     return len(nums)
     
-def removeDuplicates2(self, nums: List[int]) -> int:
+def removeDuplicates(self, nums: List[int]) -> int:
     maxCount = 2
     runner = 0
     cacher = -1
