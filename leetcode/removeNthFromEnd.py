@@ -29,7 +29,7 @@ def print(self, head):
         curr_node = curr_node.next
 
 
-def removeNthFromEnd(self, head: ListNode, n: int) -> ListNode:
+def my_removeNthFromEnd(self, head: ListNode, n: int) -> ListNode:
     rev_head = self.reverse(head)
     self.print(rev_head)
 
@@ -56,7 +56,7 @@ def removeNthFromEnd(self, head: ListNode, n: int) -> ListNode:
     return head
     
     
-def removeNthFromEnd2(self, head: ListNode, n: int) -> ListNode:
+def removeNthFromEnd(self, head: ListNode, n: int) -> ListNode:
     dummy = ListNode(0)
     dummy.next = head
     slow = dummy
