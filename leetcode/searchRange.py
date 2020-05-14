@@ -1,4 +1,4 @@
- def searchRange(self, nums: List[int], target: int) -> List[int]:
+ def my_searchRange(self, nums: List[int], target: int) -> List[int]:
         first = -1
         last = -1
         for i in range(len(nums)):
