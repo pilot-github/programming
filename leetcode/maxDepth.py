@@ -10,7 +10,7 @@
 ## link = "https://leetcode.com/problems/maximum-depth-of-binary-tree/"
 ##########################################################################################
 
-def maxDepth1(self, root: TreeNode) -> int:
+def my_maxDepth(self, root: TreeNode) -> int:
     depth = 0
     left_depth = 0
     right_depth = 0
@@ -27,7 +27,7 @@ def maxDepth1(self, root: TreeNode) -> int:
             depth += right_depth
     return depth
     
-def maxDepth2(self, root):
+def maxDepth(self, root):
     return 1 + max(self.maxDepth(root.left), self.maxDepth(root.right)) if root else 0
 
 
