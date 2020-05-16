@@ -10,7 +10,7 @@
 ## Output: true
 ################################################################
 
-def isPalindrome(self, head: ListNode) -> bool:
+def my_isPalindrome(self, head):
     if head is None:
         return True
     arr = []
