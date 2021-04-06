@@ -39,7 +39,7 @@ class DoublyLinkedList:
                     new_node.next.prev = new_node
             curr_node = curr_node.next
     
-    def append(self, data):
+    def append(self, data): ## Add a node in the end of the list
         new_node = Node(data)
         if self.head is None:
             new_node = self.head

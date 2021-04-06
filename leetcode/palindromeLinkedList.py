@@ -45,3 +45,29 @@ def isPalindrome(self, head):
     
     # if equivalent then rev become None, return True; otherwise return False 
     return not rev
+
+def isPalindrome(self, head: ListNode) -> bool:
+    slow = fast = head
+    while fast and fast.next:
+        slow = slow.next
+        fast = fast.next.next
+        
+    head2 = slow if not fast else slow.next  ## In case of even number of nodes
+    
+    prev = None
+    while slow:
+        # nxt = slow.next
+        # slow.next = prev
+        # prev = slow
+        # slow = nxt
+        slow.next,slow,prev = prev,slow.next,slow
+    
+    first = head
+    second = prev
+
+    while first and second:
+        if first.val != second.val:
+            return False
+        first = first.next
+        second = second.next
+    return True

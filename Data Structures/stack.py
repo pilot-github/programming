@@ -23,7 +23,7 @@ class Stack:
 
 s = Stack()
 print(s.is_empty())
-s.push(5)
+
 s.push('H')
 s.push('e')
 s.push('l')
