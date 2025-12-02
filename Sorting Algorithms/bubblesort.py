@@ -1,5 +1,4 @@
 def bubble_sort(num):
-    print(num)
     l = len(num)
     for i in range(l):
         swapped = False
@@ -17,6 +16,7 @@ num = [19,2,31,45,6,11,121,27]
 print(f"Original Input Array : {num}")
 bubble_sort(num)
 print(f"Final Output Array : {num}")
+
 
 
 
