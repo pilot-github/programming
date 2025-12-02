@@ -15,7 +15,8 @@ def bubble_sort(num):
 
 num = [19,2,31,45,6,11,121,27]
 
-print (bubble_sort(num))
+bubble_sort(num)
+
 
 
 
