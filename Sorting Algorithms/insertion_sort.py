@@ -12,5 +12,7 @@ def insertion_sort(num):
     return num
 
 num = [19,2,31,45,6,11,121,27]
+print(f"Original Input Array : {num}")
+insertion_sort(num)
+print(f"Final Output Array : {num}")
 
-print (insertion_sort(num))
