@@ -1,1 +1,6 @@
 Searching algorithms are used to locate specific items within a collection of data. 
+
+|Searching Algorithm|Description|
+|:---|:---|
+|Linear Search|It is used for an unsorted array. It does one by one comparison of the item to be search with array elements. It takes linear or O(n) Time.|
+|Binary Search|It is used for a sorted array. It mainly compares the array's middle element first and if the middle element is same as input, then it returns. Otherwise it searches in either left half or right half based on comparison result (Whether the mid element is smaller or greater). This algorithm is faster than linear search and takes O(Log n) time.|
