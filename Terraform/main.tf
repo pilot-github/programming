@@ -18,7 +18,7 @@ provider "aws" {
 # Define an S3 bucket resource
 resource "aws_s3_bucket" "example_bucket" {
   # Bucket names must be globally unique
-  bucket = pilot-s3-bucket"
+  bucket = "pilot-s3-bucket"
 
   tags = {
     Name        = "Managed by Terraform"
