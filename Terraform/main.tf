@@ -16,7 +16,7 @@ provider "aws" {
 }
 
 # Define an S3 bucket resource
-resource "aws_s3_bucket" "example_bucket" {
+resource "aws_s3_bucket" "pilot_bucket" {
   # Bucket names must be globally unique
   bucket = "pilot-s3-bucket"
 
@@ -28,5 +28,5 @@ resource "aws_s3_bucket" "example_bucket" {
 
 # Output the bucket's ARN after creation
 output "bucket_arn" {
-  value = aws_s3_bucket.example_bucket.arn
+  value = aws_s3_bucket.pilot_bucket.arn
 }
