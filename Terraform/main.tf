@@ -16,9 +16,9 @@ provider "aws" {
 }
 
 # Define an S3 bucket resource
-resource "aws_s3_bucket" "pilot-s3-bucket_119778517906" {
+resource "aws_s3_bucket" "pilot_bucket" {
   # Bucket names must be globally unique
-  bucket = "pilot-s3-bucket_119778517906"
+  bucket = "pilot-s3-bucket-119778517906"
 
   tags = {
     Name        = "Managed by Terraform"
@@ -28,5 +28,5 @@ resource "aws_s3_bucket" "pilot-s3-bucket_119778517906" {
 
 # Output the bucket's ARN after creation
 output "bucket_arn" {
-  value = aws_s3_bucket.pilot-s3-bucket_119778517906.arn
+  value = aws_s3_bucket.pilot_bucket.arn
 }
